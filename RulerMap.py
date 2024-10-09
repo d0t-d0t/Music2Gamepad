@@ -475,7 +475,8 @@ rulerMapDic = {
     'Keyboard_to_x360_DeadCells':{
         'Keyboard':{
             'preset':{
-                'gci' : 'vs_gamepad'
+                'gci' : 'vs_gamepad',
+                'propagate': True,
             },
             'rel_3rd_-2':{
                 'X':{
@@ -1082,7 +1083,8 @@ rulerMapDic = {
     'Keyboard_to_Keyboard':{
         'Keyboard':{
             'preset':{
-                'gci' : 'vs_keyboard_2'
+                'gci' : 'vs_keyboard_2',
+                'propagate': True,
             },
             'rel_1st_-1':{
                 'left_on':{
@@ -1091,7 +1093,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_1st_0',
+                    #'overwrite': 'rel_1st_0',
                     },
 
             },
@@ -1102,7 +1104,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_1st_0',
+                    #'overwrite': 'rel_1st_0',
                     },
                     'up_on':{
                     # 'main_input':'direction_on',
@@ -1110,7 +1112,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_3rd_0',
+                    #'overwrite': 'rel_3rd_0',
                     }
 
             }, 
@@ -1121,7 +1123,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_3rd_0',
+                    #'overwrite': 'rel_3rd_0',
                     },
 
             }, 
@@ -1132,7 +1134,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_3rd_0',
+                    #'overwrite': 'rel_3rd_0',
                     },
                     'right_on':{
                     # 'main_input':'direction_on',
@@ -1140,7 +1142,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_5th_0',
+                    #'overwrite': 'rel_5th_0',
                     },
 
 
@@ -1153,7 +1155,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_5th_0',
+                    #'overwrite': 'rel_5th_0',
                     },
 
             },
@@ -1166,7 +1168,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_5th_0',
+                    #'overwrite': 'rel_5th_0',
                     },
                 'down_on':{
                     # 'main_input':'direction_on',
@@ -1174,7 +1176,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_7th_0',
+                    #'overwrite': 'rel_7th_0',
                     },
 
 
@@ -1187,7 +1189,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_7th_0',
+                    #'overwrite': 'rel_7th_0',
                     },
 
             },
@@ -1198,7 +1200,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_1st_0',
+                    #'overwrite': 'rel_1st_0',
                     },
 
             },
@@ -1209,7 +1211,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_1st_0',
+                    #'overwrite': 'rel_1st_0',
                     },
                     'up_on':{
                     # 'main_input':'direction_on',
@@ -1217,7 +1219,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_3rd_0',
+                    #'overwrite': 'rel_3rd_0',
                     }
 
             }, 
@@ -1228,7 +1230,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_3rd_0',
+                    #'overwrite': 'rel_3rd_0',
                     },
 
             }, 
@@ -1239,7 +1241,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_3rd_0',
+                    #'overwrite': 'rel_3rd_0',
                     },
                     'right_on':{
                     # 'main_input':'direction_on',
@@ -1247,7 +1249,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_5th_0',
+                    #'overwrite': 'rel_5th_0',
                     },
 
 
@@ -1260,7 +1262,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_5th_0',
+                    #'overwrite': 'rel_5th_0',
                     },
 
             },
@@ -1273,7 +1275,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_5th_0',
+                    #'overwrite': 'rel_5th_0',
                     },
                 'down_on':{
                     # 'main_input':'direction_on',
@@ -1281,7 +1283,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_7th_0',
+                    #'overwrite': 'rel_7th_0',
                     },
 
 
@@ -1294,7 +1296,7 @@ rulerMapDic = {
                     "cible": 1,
                     "time_to_cible":0,
                     "release_mode":'note_off',
-                    'overwrite': 'rel_7th_0',
+                    #'overwrite': 'rel_7th_0',
                     },
 
             },
@@ -1369,6 +1371,114 @@ rulerMapDic = {
 
             # },
 
+
+        },
+    },
+    'Keyboard_to_x360_Default':{
+        'Keyboard':{
+            'preset':{
+                'gci' : 'vs_gamepad',
+                'propagate': True,
+            },
+            'rel_3rd_1':{
+                'X':{
+                    "gci_adress":'x_button',#to direction for kick need
+                    "cible": 1,
+                    "time_to_cible":0,
+                    "release_mode":'instant'},
+            },
+            'rel_5th_1':{
+                'Y':{
+                    "gci_adress":'y_button',#to direction for kick need
+                    "cible": 1,
+                    "time_to_cible":0,
+                    "release_mode":'instant'},
+            },
+            'rel_1st_1':{
+                'A':{
+                    "gci_adress":'a_button',#to direction for kick need
+                    "cible": 1,
+                    "time_to_cible":0,
+                    "release_mode":'instant'},
+            },
+            'rel_7th_0':{
+                'B':{
+                    "gci_adress":'b_button',#to direction for kick need
+                    "cible": 1,
+                    "time_to_cible":0,
+                    "release_mode":'instant'},
+                # 'up_on':{
+                    
+                #     "gci_adress":'left_y',
+                #     "cible": {'sign':1,'value':'gain'},
+                #     "time_to_cible":0,
+                #     "release_mode":'gain'},
+            },
+            26:{
+                'LB':{
+                    "gci_adress":'l_button',#to direction for kick need
+                    "cible": 1,
+                    "time_to_cible":0,
+                    "release_mode":'instant'},
+            },
+            34:{
+                'RB':{
+                    "gci_adress":'r_button',#to direction for kick need
+                    "cible": 1,
+                    "time_to_cible":0,
+                    "release_mode":'instant'},
+            },
+            43:{
+                'left_trigger':{
+                    "gci_adress":'left_t',#to direction for kick need
+                    "cible": {'sign':1,'value':'gain'},
+                    "time_to_cible":0,
+                    "release_mode":'bpm'},
+            },
+            45:{
+                'right_trigger':{
+                    "gci_adress":'right_t',#to direction for kick need
+                    "cible": {'sign':1,'value':'gain'},
+                    "time_to_cible":0,
+                    "release_mode":'bpm'},
+            },
+            'rel_1st_0':{
+                'left_on':{
+                    
+                    "gci_adress":'left_x',
+                    "cible": {'sign':-1,'value':'gain'},
+                    "time_to_cible":0,
+                    "release_mode":'note_off'},
+
+            },
+            'rel_5th_0':{
+                'right_on':{
+                    
+                    "gci_adress":'left_x',
+                    "cible": {'sign':1,'value':'gain'},
+                    "time_to_cible":0,
+                    "release_mode":'note_off'},
+
+            },
+            
+            'rel_7th_-1':{
+                'down_on':{
+                    
+                    "gci_adress":'left_y',
+                    "cible": {'sign':-1,'value':'gain'},
+                    "time_to_cible":0,
+                    "release_mode":'note_off'},
+
+            },
+            'rel_3rd_0':{
+                'up_on':{
+                    
+                    "gci_adress":'left_y',
+                    "cible": {'sign':1,'value':'gain'},
+                    "time_to_cible":0,
+                    "release_mode":'note_off'},
+
+            },
 
         },
     },

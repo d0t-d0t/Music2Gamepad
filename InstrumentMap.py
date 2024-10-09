@@ -195,5 +195,6 @@ scaleMapDic = {
 
 tonalityGridDic = {
     'test' : [(57, 'Blues', 4), (64, 'Blues', 4), (57, 'Blues', 4), (64, 'Blues', 4)],
+    'I_V_sans renversement' : [('I','Major',4), ('V','Major',4), ('I','Major',4), ('V','Major',4)],
     '12BarBlues' : [('I','Blues',4), ('IV','Blues',2), ('I','Blues',2), ('V','Blues',1), ('IV','Blues',1), ('I','Blues',1), ('V','Blues',1), ]
     }

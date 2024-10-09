@@ -10,7 +10,7 @@ gamepad_dict = {}
 #COMMON VARIABLES
 # beat_master.bpm = 120
 # tonal = 72#'C5'
-verbose = False
+verbose = True
 instant_delay = 20
 
 class BeatMaster:
@@ -746,7 +746,7 @@ class GameControlerInput(threading.Thread):
         
 
     def release_input(self,*args,**kwargs):
-        
+        print('RELEASING INPUT:',self.gci_adress)
         if self.gci_type == 'keyboard':
             try:
                 # if keyboard.is_pressed(self.gci_adress):
@@ -760,6 +760,7 @@ class GameControlerInput(threading.Thread):
                 self.definition(value_float = 0)
 
             elif self.input_type == 'joystick':
+                print('RELEASING JOYSTICK')
                 if self.axe == 'x':
                     self.definition(x_value_float = 0)
                 elif self.axe == 'y':
@@ -992,6 +993,8 @@ class Mapping:
                         else:
                             over_key = rule.overwrite
                         msg.note = over_key 
+                    else:
+                        msg.note = input.key
 
                     for outp in self.outputList:
                         outp.send_message(msg)
@@ -1079,6 +1082,12 @@ class Rule:
             
             #calculate press
             if not off:
+                if instrument_input_value == 0 and self.release_mode == 'note_off':
+                    print('NOTE OFF:',self.gci_adress)
+                    self.gci.timeToRelease = 0
+                    self.gci.isOn=False
+                    self.gci.release_input()
+                    return
                 if self.release_mode == 'gain':
                     self.release_time = self.release_max_beat*1000*(instrument_input_value/128)#60/beat_master.bpm)*
 
@@ -1103,6 +1112,8 @@ class Rule:
                             
                             self.gci.timeToRelease = self.release_time
                         else:
+                        
+                        
                             self.gci.keep_pressed = True
                             self.gci.timeToRelease = None
                     else:
@@ -1113,8 +1124,9 @@ class Rule:
                 self.gci.sem.release()
                 print('sem released:',self.gci_adress)
             else:
-                if verbose:
-                    print('RELEASE MODE:',self.release_mode)
+                # if verbose:
+                #     
+                print('RELEASE MODE:',self.release_mode)
                 if self.release_mode == 'note_off':
                     if verbose:
                         print('NOTE OFF:',self.gci_adress)

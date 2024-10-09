@@ -3,6 +3,7 @@
 ## Description
 
 The main goal of this project is to provide ways to use any music instrument, including voice as game controller. 
+The idea is to get familiar with instrument, musicality, and music theory whith gaming.
 
 ## Functions and Limitations
 For the moment you can:
@@ -51,3 +52,36 @@ You may also need LoopMidi from https://www.tobias-erichsen.de/software.html to 
 
 - Click on 'Create Mapper' and now your music input should emulate controller output
 
+-'Input on' checkbox allow to deactivate/reactivate controller input 
+
+### Musical progression and Accompaniment:
+
+    In order to have more musicality there is ways to change some options. Some are dependent to Ableton linking, some aren't. 
+ #### Ableton linking
+    To link to ableton, you simply have to follow https://github.com/ideoforms/AbletonOSC installation process and to launch an instance of Ableton. 
+    
+    Once done, Play/stop, BPM, metronome  and rythmic signature will be linked to the app.
+
+ #### BPM:
+    BPM at which ableton and progression grid will be playing
+ 
+ #### Key and Scale
+    The central note and scale your relative settings will be based uppon. 
+        
+    e.g.: Your key is C3, scale is 'Major'and One of rule mapping input is, :
+
+    ```python
+        'rel_3rd_-1':{...}
+    ```
+
+    Your rule will then be triggered when you play the Third of C Major Scale, with an offset of '-1' octave starting from C3 >>> E2
+
+    You can manually add some new scales pattern in InstrumentMap.py/scaleMapDic.
+    
+ #### Progression Grid
+    This allow to have some harmonic progression during you game session.  
+    Following the same logic as a chord grid, each case represent a measure.
+
+    Once play is hit, the programm will follow GRID, BPM and RythmicSign to make every relative input follow the progression.
+
+    If you are using Ableton link, you can have some tracks with accoumpaniment foloowing this grid to jam with while you playing
