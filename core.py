@@ -766,8 +766,10 @@ class GameControlerInput(threading.Thread):
                 elif self.axe == 'y':
                     self.definition(y_value_float = 0)
             elif self.input_type == 'button':
-                self.gamepad.release_button(button = self.button)
+                print('RELEASING BUTTON')
+                self.gamepad.release_button(button = self.button)            
             self.gamepad.update()
+        
         pass
 
 
@@ -1088,12 +1090,16 @@ class Rule:
                     self.gci.isOn=False
                     self.gci.release_input()
                     return
-                if self.release_mode == 'gain':
+                if self.release_mode in ['gain','r_n_gain']:
                     self.release_time = self.release_max_beat*1000*(instrument_input_value/128)#60/beat_master.bpm)*
 
                 self.gci.sem.acquire()
                 try:
                     print('sem acquired:',self.gci_adress)
+                    if self.release_mode == 'r_n_gain':
+                        self.gci.timeToRelease = 0
+                        # time.sleep(2/60)
+                    
                     
                     if type(self.cible) in [int,float]:
                         if self.gci.cible != self.cible:

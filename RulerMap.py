@@ -1482,6 +1482,158 @@ rulerMapDic = {
 
         },
     },
+    'DM10_to_x360_cuphead':{
+        'DM10':{
+            'preset':{
+                'gci' : 'vs_gamepad',
+                'propagate': True,
+            },
+            60:{
+                'X':{
+                    "gci_adress":'x_button',#to direction for kick need
+                    "cible": 1,
+                    "time_to_cible":0,
+                    "release_mode":'bpm',
+                    # 'overwrite': 'rel_7th_0',
+                    },
+            },
+            36:{
+                'A_off':{
+                    "gci_adress":'a_button',#to direction for kick need
+                    "cible": 0,
+                    "time_to_cible":0,
+                    "release_mode":'instant',
+                    },
+                    
+                'A':{
+                    "gci_adress":'a_button',#to direction for kick need
+                    "cible": 1,
+                    "time_to_cible":1/60,
+                    "release_mode":'gain',
+                    'release_max_beat': 0.125},
+
+                    
+            },
+            43:{
+                # 'right_bumper':{
+                #     "gci_adress":'y_button',#to direction for kick need
+                #     "cible": 1,
+                #     "time_to_cible":0,
+                #     "release_mode":'bpm'},
+            },
+            45:{
+                'Y':{
+                    "gci_adress":'b_button',#to direction for kick need
+                    "cible": 1,
+                    "time_to_cible":0,
+                    "release_mode":'bpm'},
+            },
+            63:{
+                'Y':{
+                    "gci_adress":'y_button',#to direction for kick need
+                    "cible": 1,
+                    "time_to_cible":0,
+                    "release_mode":'bpm'},
+            },
+            51:{
+                'B':{
+                    "gci_adress":'y_button',#to direction for kick need
+                    "cible": 1,
+                    "time_to_cible":0,
+                    "release_mode":'bpm'},
+                # 'up_on':{
+                    
+                #     "gci_adress":'left_y',
+                #     "cible": {'sign':1,'value':'gain'},
+                #     "time_to_cible":0,
+                #     "release_mode":'gain'},
+            },
+            26:{
+                'LB':{
+                    "gci_adress":'l_button',#to direction for kick need
+                    "cible": 1,
+                    "time_to_cible":0,
+                    "release_mode":'instant'},
+            },
+            34:{
+                'RB':{
+                    "gci_adress":'r_button',#to direction for kick need
+                    "cible": 1,
+                    "time_to_cible":0,
+                    "release_mode":'instant'},
+                'right_on':{                    
+                    "gci_adress":'left_x',
+                    "cible": {'sign':1,'value':0},
+                    "time_to_cible":0,
+                    "release_mode":'instant'},
+                'down_on':{                    
+                    "gci_adress":'left_y',
+                    "cible": {'sign':-1,'value':0},
+                    "time_to_cible":0,
+                    "release_mode":'instant'},
+            },
+            102:{
+                'left_trigger':{
+                    "gci_adress":'left_t',#to direction for kick need
+                    "cible": {'sign':1,'value':'gain'},
+                    "time_to_cible":0,
+                    "release_mode":'bpm'},
+            },
+            103:{
+                'right_trigger':{
+                    "gci_adress":'right_t',#to direction for kick need
+                    "cible": {'sign':1,'value':'gain'},
+                    "time_to_cible":0,
+                    "release_mode":'bpm'},
+            },
+            47:{
+                'left_on':{
+                    
+                    "gci_adress":'left_x',
+                    "cible": {'sign':-1,'value':1},
+                    "time_to_cible":0,
+                    "release_mode":'gain',
+                    # 'overwrite': 'rel_5th_0',
+                    },
+
+            },
+            46:{
+                'right_on':{
+                    
+                    "gci_adress":'left_x',
+                    "cible": {'sign':1,'value':1},
+                    "time_to_cible":0,
+                    "release_mode":'gain',
+                    # 'overwrite': 'rel_1st_0',
+                    },
+
+            },
+            
+            38:{
+                'down_on':{
+                    
+                    "gci_adress":'left_y',
+                    "cible": {'sign':-1,'value':1},
+                    "time_to_cible":0,
+                    "release_mode":'gain',
+                    # 'overwrite': 'rel_3rd_0',
+                    },
+
+            },
+            49:{
+                'up_on':{
+                    
+                    "gci_adress":'left_y',
+                    "cible": {'sign':1,'value':1},
+                    "time_to_cible":0,
+                    "release_mode":'gain',
+                    # 'overwrite': 'rel_7th_0',
+                    },
+
+            },
+
+        },
+    },
     
 
 
